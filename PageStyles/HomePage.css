@@ -1,0 +1,926 @@
+:root{
+  --color-one: #ea3680;
+  --color-two: #5eb5ac;
+  --color-three: black;
+  --color-four: white;
+  --color-five: #12ebe7;
+  --color-six: #90ebeb;
+  --color-seven: #75163f;
+  --color-eight: red;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html{
+  font-size: 70%;
+}
+
+body{
+  background-color: rgb(15, 13, 24);
+  color: linen;
+}
+
+a{
+  text-decoration: none;
+  color: var(--color-four);
+}
+
+.hide{
+  visibility: hidden;
+  position: absolute;
+  right: 15px;
+}
+
+.content-container{
+  padding-top: 20px;
+}
+
+.top-bar a{
+  color: var(--color-one);
+}
+
+.top-bar{
+  position: fixed;
+  z-index: 1;
+  background: linear-gradient(to right, transparent, var(--color-five) 40px, var(--color-five) 50px, transparent 350px);
+  width: 100%;
+  top: 0px;
+  padding: 0 15px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-four);
+  text-align: center;
+}
+
+.top-bar{
+  background-color: #0f0d18;
+}
+
+.title-about{
+  font-family: Bebas Neue, sans-serif;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 2px black;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  width: 80%;
+}
+
+.navigate-here{
+  display: grid;
+  text-shadow: 2px 2px 2px gray;
+  box-shadow: 1px 3px 10px 10px white;
+  font-size: 1.8rem;
+  width: 45%;
+  min-width: 500px;
+  height: 70%;
+  min-height: 55px;
+  align-items: center;
+  padding-left: 15px;
+  background-color: transparent;
+  grid-template-columns: minmax(4rem, 20%)minmax(4rem, 20%)minmax(4rem, 20%)minmax(4rem, 20%)minmax(4rem, 20%);
+}
+
+.navigate-here a{
+  width: 80%;
+  min-width: 90px;
+  height: 60%;
+  color: var(--color-four);
+  padding-top: 5px;
+  border: 1px solid var(--color-four);
+  margin: 0px 5px;
+  box-shadow: 0px 0px 5px 1px var(--color-four);
+}
+
+.navigate-here a:hover{
+  border-color: var(--color-one);
+  color: var(--color-one);
+  box-shadow: 0px 1px 5px 1px var(--color-one);
+  text-shadow: 2px 2px 2px var(--color-one);
+  transform: scale(105%);
+}
+
+.introduction{
+  position: relative;
+  padding: 3%;
+  top: 200px;
+  left: 5%;
+  width: 40%;
+  min-width: 350px;
+  height: 35%;
+  min-height: 200px;
+  border-radius: 20%;
+  background: transparent;
+}
+
+.introduction:hover{
+  transform: scale(110%);
+  box-shadow: 1px 2px 10px 10px var(--color-five);
+}
+
+.intro-greeting{
+  width: 100%;
+  height: 85%;
+  font-family: Edu AU VIC WA NT Arrows, sans-serif;
+  line-height: 1.2;
+  color: white;
+  text-shadow: 2px 2px 2px gray;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 2.5rem;
+  text-wrap: nowrap;
+}
+
+.picture-of-me{
+  width: 30vw;
+  height: 60vh;
+  min-width: 200px;
+  min-height: 400px;
+  max-height: 500px;
+  overflow: hidden;
+  position: relative;
+  left: 67.5vw;
+  top: -100px;
+  border-radius: 50% 0% 0% 50%;
+  box-shadow: 0px 0px 10px gray;
+}
+
+.picture-of-me:hover{
+  transform: scale(105%);
+  right: 0.8%;
+}
+
+.picture-of-me img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0% 3%;
+}
+
+.more-about-me{
+  position: relative;
+  background: transparent;
+  width: 40%;
+  min-width: 450px;
+  height: 30%;
+  min-height: 200px;
+  border-radius: 0% 10%;
+  top: -18vh;
+  left: 25%;
+}
+
+.more-about-me:hover{
+  transform: scale(110%);
+  box-shadow: 1px 3px 10px 10px rgb(205, 42, 115);
+}
+
+.messages{
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  font-size: 2.8rem;
+  text-shadow: 2px 2px 2px gray;
+  color: white;
+  text-align: center;
+  font-family: Protest Revolution, sans-serif;
+}
+
+.about-page{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 15% 1fr 15%;
+  color: var(--color-four);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.about-page-intro:hover{
+  transform: scale(101%);
+  box-shadow: 0px 0px 10px 5px var(--color-seven);
+}
+
+.about-page-intro{
+  transition: 150ms;
+  border-radius: 10px;
+  padding: 15px;
+
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: 2.5fr 0.5fr;
+  
+}
+
+.about-page-title{
+  font-size: 2.8rem;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: -20px;
+  text-shadow: 0px 0px 10px yellowgreen;
+}
+
+.who-i-am{
+  font-size: 2.5rem;
+  text-align: justify;
+  text-shadow: 0px 0px 10px red;
+}
+
+.who-i-am1{
+  grid-column: 1/2;
+  margin: 60px 25px 0px;
+}
+
+.picture-of-me2{
+  grid-column: 2/-1;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: -1px 2px 5px 0px yellowgreen;
+  margin: 0 auto;
+}
+
+.who-i-am2{
+  grid-column: 1/-1;
+}
+
+.about-page-link{
+  color: var(--color-three);
+  text-shadow: 0px 3px 5px black;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 10px linen;
+  background-color: var(--color-four);
+  font-size: 2rem;
+  grid-column: 2/-1;
+  border-radius: 10px;
+  transition-duration: 150ms;
+}
+
+.about-page-link:hover{
+  color: var(--color-four);
+  box-shadow: 0px 0px 10px black;
+  background-color: var(--color-seven);
+  text-shadow: 0px 3px 5px linen;
+  transform: scale(106%);
+}
+
+.learning-progress{
+  width: 90%;
+  display: grid;
+  grid-template-columns: 20rem 1fr 20rem;
+  background-color: white;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.statical-view{
+  color: var(--color-seven);
+  font-size: 2.5rem;
+  text-shadow: 0px 2px 2px blueviolet;
+}
+
+.llp{
+  grid-column: 2/-1;
+  display: grid;
+  grid-template-columns: 8% 70% 8%;
+  align-items: center;
+  gap: 20px;
+}
+
+.learning-progress img:nth-of-type(1),.learning-progress img:nth-of-type(2){
+  width: 50px;
+}
+.learning-progress img:nth-of-type(3),.learning-progress img:nth-of-type(6),.learning-progress img:nth-of-type(8){
+  width: 60px;
+}
+.learning-progress img:nth-of-type(4),.learning-progress img:nth-of-type(5){
+  width: 130px;
+  margin-left: -40px;
+}
+.learning-progress img:nth-of-type(7){
+  width: 100px;
+  margin-left: -30px;
+}
+
+.progress-made1{
+  background: linear-gradient(to right, var(--color-eight), var(--color-eight) 25%,transparent 25%,transparent);
+}
+.progress-made2{
+  background: linear-gradient(to right, var(--color-eight), var(--color-eight) 89%,transparent 89%,transparent);
+}
+.progress-made3{
+  background: linear-gradient(to right, var(--color-eight), var(--color-eight) 95%,transparent 95%,transparent);
+}
+.progress-made4{
+  background: linear-gradient(to right, var(--color-eight), var(--color-eight) 56%,transparent 56%,transparent);
+}
+.progress-made5{
+  background: linear-gradient(to right, var(--color-eight), var(--color-eight) 43%,transparent 43%,transparent);
+}
+.progress-made6{
+  background: linear-gradient(to right, var(--color-eight), var(--color-eight) 15%,transparent 15%,transparent);
+}
+.progress-made7{
+  background: linear-gradient(to right, var(--color-eight), var(--color-eight) 77%,transparent 77%,transparent);
+}
+.progress-made8{
+  background: linear-gradient(to right, var(--color-eight), var(--color-eight) 58%,transparent 58%,transparent);
+}
+
+.progress-made{
+  width: 100%;
+  height: 10px;
+  border: 1px solid var(--color-one);
+  box-shadow: 0px 0px 2px 2px blueviolet;
+}
+
+
+.work figcaption{
+  color: var(--color-four);
+  font-size: 2rem;
+  text-align: center;
+  margin: 20px 0;
+  height: 30px;
+  text-shadow: 0px 3px 5px linen;
+  box-shadow: 0px 0px 20px 0px black;
+  background-color: var(--color-two);
+  cursor: pointer;
+}
+
+.work a img{
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+  object-position: 15% 50%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px 1px black;
+}
+
+.work img:hover, .work figcaption:hover{
+  transform: scale(105%);
+  box-shadow: 0px 0px 15px 1px var(--color-three);
+  background-color: var(--color-seven);
+}
+
+.work3 a img{
+  object-position: 100% 0%;
+}
+
+.work5 a img{
+  object-position: 40% 0%;
+}
+
+.my-works{
+  width: 80%;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 90px;
+  margin: 0px auto;
+}
+
+.certeficates{
+  padding-top: 70px;
+  width: 100%;
+  height: 450px;
+  margin: 0 auto;
+}
+
+.certeficates img{
+  position: absolute;
+  width: 20%;
+  max-width: 400px;
+  margin: 0 10px;
+  box-shadow: 0px 0px 10px 5px var(--color-one);
+}
+
+.certeficates img:nth-of-type(2){
+  width: 40%;
+  max-width: 500px;
+  left: 38%;
+  animation: slide2 20s infinite ease-in-out;
+}
+
+.certeficates img:first-of-type{
+  left: 10%;
+  margin-top: 40px ;
+  opacity: 0.5;
+  animation: slide3 20s infinite ease-in-out;
+}
+
+.certeficates img:last-of-type{
+  right: 5%;
+  margin-top: 40px ;
+  opacity: 0.5;
+  animation: slide1 20s infinite ease-in-out;
+}
+
+.certeficates img:hover{
+  transform: scale(105%);
+}
+
+@keyframes slide1{
+  0%{
+    left: 70%;
+    margin-top: 40px ;
+    opacity: 0.2;
+  }
+  50%{
+    margin-top: 0px;
+    width: 40%;
+    left: 38%;
+    opacity: 1;
+    max-width: 500px;
+  }
+  80%{
+    left: 10%;
+    margin-top: 40px ;
+    opacity: 0.2;
+  }
+  100%{
+    left: 70%;
+    margin-top: 40px ;
+    opacity: 0.2;
+  }
+}
+
+@keyframes slide2{
+  0%{
+    margin-top: 0px;
+    width: 40%;
+    left: 38%;
+    max-width: 500px;
+    opacity: 1;
+  }
+  50%{
+    width: 25%;
+    left: 10%;
+    margin-top: 40px;
+    max-width: 400px;
+    opacity: 0.2;
+  }
+  80%{
+    width: 25%;
+    left: 70%;
+    margin-top: 40px;
+    max-width: 400px;
+    opacity: 0.2;
+  }
+  100%{
+    margin-top: 0px;
+    width: 40%;
+    left: 38%;
+    max-width: 500px;
+    opacity: 1;
+  }
+}
+
+@keyframes slide3{
+  0%{
+    left: 10%;
+    margin-top: 40px ;
+    opacity: 0.2;
+  }
+  50%{
+    width: 25%;
+    left: 70%;
+    margin-top: 40px;
+    max-width: 400px;
+    opacity: 0.2;
+  }
+  80%{
+    margin-top: 0px;
+    width: 40%;
+    left: 38%;
+    max-width: 500px;
+    opacity: 1;
+  }
+  100%{
+    left: 10%;
+    margin-top: 40px ;
+    opacity: 0.2;
+  }
+}
+
+.certeficates-link{
+  display: block;
+  text-shadow: 0px 2px 5px linen;
+  text-align: center;
+  width: 40%;
+  height: 50px;
+  margin: 60px auto 0px;
+  font-size: 2.5rem;
+  background-color: var(--color-seven);
+  padding-top: 10px;
+  box-shadow: 0px 0px 10px 5px var(--color-one);
+}
+
+.certeficates-link:hover{
+  background-color: var(--color-four);
+  color: black;
+  text-shadow: 0px 2px 5px gray;
+  box-shadow: 0px 0px 10px 5px var(--color-four);
+  transform: scale(102%);
+}
+
+.contact-me{
+  width: 80%;
+  margin: 0px auto;
+  padding-top: 60px;
+}
+
+.write-to-me label{
+  margin: 10px auto;
+}
+
+.write-to-me label input,.write-to-me label select{
+  display: inline-block;
+  width: 60%;
+  max-width: 220px;
+  height: 30px;
+  margin-left: 20px;
+  border: unset;
+  color: var(--color-seven);
+  box-shadow: 0px 0px 2px 2px var(--color-five);
+  font-size: 1.3rem;
+  padding: 5px;
+}
+
+.write-to-me label textarea{
+  display: block;
+  margin: 20px auto 0px;
+  width: 150%;
+  height: 180px;
+  color: var(--color-seven);
+  border: unset;
+  box-shadow: 0px 0px 2px 2px var(--color-five);
+  font-size: 1.2rem;
+  padding: 5px;
+}
+
+.write-to-me input[type=Submit]{
+  width: 100%;
+}
+
+.write-to-me input[type=Submit]:hover{
+  color: var(--color-two);
+  transform: scale(105%);
+  cursor: pointer;
+}
+
+.write-to-me legend{
+  margin-left: 40px;
+}
+
+.write-to-me{
+  padding: 20px 0;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: wrap column;
+  font-size: 1.7rem;
+  text-shadow: 0px 2px 2px var(--color-five);
+  border-color: var(--color-six);
+}
+
+.find-me{
+  margin: 60px auto;
+  font-size: 4rem;
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  width: 80%;
+  padding-left: 100px;
+  border: unset;
+}
+
+.find-me i:hover{
+  transform: scale(105%);
+  color: var(--color-six);
+}
+
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, transparent, var(--color-seven) 5%, transparent 30%, transparent 80%, var(--color-seven), transparent);
+}
+
+.footer span{
+  padding: 0 15px;
+  height: 15%;
+  max-height: 80px;
+  margin: 20px 0;
+  font-family: Bebas Neue, sans-serif;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 2px black;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+}
+
+@media (max-width: 1130px){
+  .top-bar{
+    background: linear-gradient(to right, transparent, var(--color-five) 25px, var(--color-five) 35px, transparent 300px);
+    height: 70px;
+    background-color: #0f0d18;
+  }
+  .title-about{
+    font-size: 2rem;
+  }
+  nav[class~=visible]{
+    visibility: hidden;
+  }
+  nav[class~=hide]{
+    visibility: visible;
+  }
+  .navigate-here {
+    border: unset;
+    box-shadow: none;
+    min-width: unset;
+  }
+  .navigate-here  a{
+    color: var(--color-four);
+    border: unset;
+    box-shadow: none;
+    font-size: 3rem;
+  }
+  .navigate-here a:hover{
+    border: unset;
+    box-shadow: unset;
+    color: var(--color-one);
+  }
+
+  .introduction{
+    margin-top: -50px;
+  }
+
+  .intro-greeting{
+    font-size: 1.9rem;
+  }
+  .picture-of-me{
+    min-height: 250px;
+    max-width: 320px;
+    width: 28vw;
+    height: 33vh;
+    top: -65px;
+  }
+  .messages{
+    width: 90%;
+    height: 90%;
+    padding: 20px;
+    font-size: 2.3rem;
+  }
+  .more-about-me{
+    top: -40px;
+  }
+  .about-page{
+    padding: unset;
+    padding-top: 40px;
+    color: var(--color-six);
+    grid-template-columns: 5% 1fr 5%;
+  }
+  .who-i-am{
+    font-size: 2.1rem;
+    text-shadow: 0px 0px 10px grey;
+  }
+  .learning-progress{
+    width: 70%;
+    grid-template-columns: 2rem 1fr 2rem;
+  }
+  .llp{
+    grid-template-columns: 12% 70% 4%;
+  }
+  .progress-made{
+    width: 95%;
+  }
+  .my-works{
+    padding-top: 80px;
+    background-color: white;
+  }
+  .certeficates-link{
+    margin-top: -10px;
+  }
+  .write-to-me label textarea{
+    width: 100%;
+  }
+  .how-did-you-here{
+    text-align: center;
+  }
+  #How{
+    margin-top: 10px;
+  }
+  .find-me{
+    font-size: 3rem;
+  }
+  .footer span{
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 710px){
+  .top-bar{
+    height: 52px;
+  }
+  .navigate-here a{
+    font-size: 2.2rem;
+  }
+  .intro-greeting{
+    font-size: 1.7rem;
+  }
+  .introduction{
+    top: 90px;
+  }
+  .picture-of-me{
+    width: 24vw;
+    min-height: 100px;
+    height: 25vh;
+    min-width: 185px;
+    top: -70px;
+  }
+  .more-about-me{
+    left: 15%;
+    min-width: 350px;
+  }
+  .messages{
+    font-size: 1.9rem;
+    padding: 5px;
+  }
+  .about-page{
+    grid-template-columns: 2% 1fr 2%;
+  }
+  .about-page-title{
+    font-size: 2.3rem;
+  }
+  .who-i-am{
+    font-size: 1.9rem;
+  }
+  .who-i-am1{
+    margin: unset;
+    margin: 30px 5px 0px;
+  }
+  .picture-of-me2{
+    width: 150px;
+    height: 150px;
+  }
+  .about-page-link{
+    padding: 9px;
+    font-size: 1.5rem;
+  }
+  .progress-made{
+    width: 90%;
+  }
+  .statical-view{
+    font-size: 1.8rem;
+  }
+  .learning-progress img:nth-of-type(1), .learning-progress img:nth-of-type(2) {
+    width: 35px;
+}
+.learning-progress img:nth-of-type(3), .learning-progress img:nth-of-type(6), .learning-progress img:nth-of-type(8) {
+  width: 45px;
+}
+.learning-progress img:nth-of-type(4), .learning-progress img:nth-of-type(5) {
+  width: 100px;
+  margin-left: -30px;
+}
+.learning-progress img:nth-of-type(7) {
+  width: 80px;
+  margin-left: -30px;
+}
+.certeficates-link{
+  width: 30%;
+  height: 40px;
+  font-size: 1.8rem;
+  margin-top: -100px;
+}
+.find-me{
+  font-size: 2.4rem;
+  padding: unset;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+}
+@media (max-width: 642px){
+  .title-about{
+    font-size: 1.6rem;
+    width: 70%;
+    width: 200px;
+  }
+
+  .hide{
+    display: flex;
+    justify-content:space-evenly;
+    width: 165px;
+    right: 43px;
+  }
+  .hide a{
+    font-size: 2rem;
+     min-width: unset;
+     margin: 0 7px;
+  }
+  .introduction{
+    left: 15%;
+  }
+  main{
+    padding-top: 70px;
+  }
+  .introduction{
+    position: unset;
+    margin: 0 auto;
+    min-width: 300px;
+    min-height: 150px;
+  }
+  .intro-greeting{
+    font-size: 1.5rem;
+  }
+  .picture-of-me{
+    position: unset;
+    min-width: 200px;
+    border-radius: 50% 50%;
+    margin: 30px auto;
+  }
+  .more-about-me{
+    position: unset;
+    margin: 0 auto;
+    min-width: 330px;
+    min-height: 150px;
+    padding-left: 30px;
+  }
+  .messages{
+    font-size: 1.7rem;
+  }
+  .about-page{
+    display: block;
+    padding-top: 40px;
+  }
+  .about-page-intro{
+    display: block;
+  }
+  .about-page-intro:hover{
+    box-shadow: unset;
+  }
+  .picture-of-me2{
+    width: 180px;
+    height: 180px;
+    margin: 5px auto;
+    display: block;
+    border-radius: inherit;
+  }
+  .who-i-am {
+    font-size: 1.55rem;
+  }
+  .about-page-link{
+    display: block;
+    width: 100px;
+    margin-left: 78%;
+    margin-top: 10px;
+  }
+  .learning-progress{
+    display: block;
+    background-color: unset;
+  }
+  .progress-made{
+    box-shadow: 0px 0px 2px 2px gray;
+    border-color: var(--color-four);
+  }
+  :root{
+    --color-eight: white;
+  }
+  .statical-view{
+    color: var(--color-four);
+  }
+
+  .work a img{
+    width: 300px;
+  }
+  .certeficates-link{
+    margin-top: -200px;
+  }
+  .write-to-me{
+    padding: 5px;
+    font-size: 1.45rem;
+  }
+
+  .write-to-me label input{
+    margin-top: 10px;
+  }
+
+  .your-name, .your-email{
+    text-align: center;
+  }
+
+  .footer span{
+    font-size: 1.3rem;
+    text-align: center;
+  }
+}

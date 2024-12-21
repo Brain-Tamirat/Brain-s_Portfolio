@@ -1,0 +1,285 @@
+:root{
+  --color-gray: gray;
+  --color-orange: orange;
+  --color-white: white;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: linear-gradient(45deg,#7acbfe 10%,#effce0);
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+nav h2{
+  background-color: beige;
+  display: inline-block;
+  padding: 5px;
+  margin: 5px;
+  position: absolute;
+  border-radius: 10%;
+  color: blue;
+  box-shadow: 0px 0px 10px 1px black;
+}
+
+h2 a{
+  color: unset;
+  text-decoration: unset;
+}
+
+nav h2:hover{
+  transform: scale(102%);
+}
+
+.sun{
+  position: absolute;
+  right: -100px;
+  top: -100px;
+  border-radius: 50%;
+  width: 210px;
+  height: 210px;
+  background-color: yellow;
+}
+
+.front-mountain{
+  width: 800px;
+  height: 280px;
+  position: absolute;
+  top: 200px;
+  left: -300px;
+  z-index: -1;
+  transform: rotate(45deg);
+  background: linear-gradient(to top,#7acbfe,#caf1e5 105%);
+}
+
+.back-mountain{
+  position: absolute;
+  z-index: -2;
+  top: 250px;
+  left: 150px;
+  width: 250px;
+  height: 300px;
+  transform: rotate(45deg);
+  background: linear-gradient(to top,#7acbfe,#caf1e5 105%);;
+}
+
+.penguin{
+  width: 350px;
+  height: 350px;
+  margin: 0px auto;
+  top: 50px;
+  position: relative;
+  transition: transform 1s ease-in-out 0ms;
+}
+
+.penguin:active {
+  transform: scale(1.2);
+  cursor: not-allowed;
+}
+
+.head{
+  position: absolute;
+  z-index: 2;
+  top: 105px;
+  left: 25%;
+  width: 45%;
+  height: 150px;
+  border-radius: 47%;
+  background: linear-gradient(45deg, var(--color-gray), var(--color-white) 110%);
+}
+
+.face{
+  position: absolute;
+  top: 20px;
+  width: 85px;
+  height: 110px;
+  background-color: var(--color-white);
+  border-radius: 47%;
+}
+
+.face-left{
+  left: 13px;
+}
+
+.face-right{
+  right: 13px;
+}
+
+.face-bottom{
+  position: absolute;
+  bottom: 8px;
+  left: 14px;
+  border-radius: 50%;
+  width: 130px;
+  height: 110px;
+  background-color: var(--color-white);
+}
+
+.eye{
+  position: absolute;
+  top: 60px;
+  border-radius: 50%;
+  width: 25px;
+  height: 30px;
+  background-color: black;
+}
+
+.eye::after{
+  content: "";
+  width: 40px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  left: -8px;
+  bottom: -3px;
+}
+
+.eye-left{
+  left: 40px;
+}
+
+.eye-right{
+  right: 40px;
+}
+
+.dimple{
+  position: absolute;
+  top: 90px;
+  width: 25px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: pink;
+}
+
+.dimple-left{
+  left: 20px;
+}
+
+.dimple-right{
+  top: 95px;
+  right: 25px;
+}
+
+.mouth{
+  position: absolute;
+  border-radius: 50%;
+  height: 15px;
+  background-color: var(--color-orange);
+}
+
+.mouth-top{
+  width: 37px;
+  top: 95px;
+  left: 40%;
+}
+
+.mouth-bottom{
+  width: 30px;
+  top: 102px;
+  left: 42%;
+}
+
+.body{
+  position: absolute;
+  z-index: 1;
+  top: 55%;
+  left: 22%;
+  border-radius: 50%;
+  width: 180px;
+  height: 170px;
+  background: linear-gradient(45deg,var(--color-gray), var(--color-white) 30%)
+}
+
+.body::before{
+  content: "";
+  width: 90px;
+  border-radius: 0% 0% 50% 50%;
+  height: 70px;
+  position: absolute;
+  top: 20px;
+  left: 45px;
+  background-color: #a4a4a4;
+}
+
+.hand{
+  background: linear-gradient(to top, var(--color-gray), #a4a4a4 30%, var(--color-white) 130%) ;
+  width: 115px;
+  height: 55px;
+  position: absolute;
+  top: 230px;
+}
+.hand-left{
+  left: -20px;
+  transform-origin: 100% 100%;
+  transform: rotate(55deg);
+  border-top-left-radius: 27%;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 40%;
+  animation: waves 2s linear infinite;
+}
+.hand-right{
+  right: 50px;
+  transform: rotate(45deg);
+  border-top-right-radius: 27%;
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 40%;
+}
+
+.foot{
+  position: absolute;
+  background-color: orange;
+  width: 50px;
+  height: 35px;
+  border-radius: 35% 60%;
+  top: 340px;
+}
+.foot-left{
+  left: 110px;
+  transform: skew( -20deg, -5deg);
+}
+.foot-right{
+  right: 125px;
+  transform: skew(10deg, 2deg);
+}
+
+.only-txt{
+  position: absolute;
+  top: 85px;
+  left: 45px;
+  width: 100px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.ground{
+  width: 100%;
+  height: 40vh;
+  background: linear-gradient(to right , #58afec, #b6ffff);
+}
+
+@keyframes waves{
+  0%{
+    transform: rotate(50deg);
+  }
+  10%{
+    transform: rotate(25deg);
+  }
+  20%{
+    transform: rotate(30deg);
+  }
+  30%{
+    transform: rotate(40deg);
+  }
+  40%{
+    transform: rotate(50deg);
+  }
+}

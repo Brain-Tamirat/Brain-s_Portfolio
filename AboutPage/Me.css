@@ -1,0 +1,507 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+:root{
+  --color-1:#0f0d18;
+  --color-2:#071e28;
+  --color-3:#0a0c4d;
+  --color-4:#5e1230;
+  --color-5:#dd276d;
+  --color-6:#0f0f1a;
+  --color-7:#f6f7f7;
+  --color-8:#011053;
+  --color-9:#3e0404;
+}
+
+html{
+  font-size: 64%;
+  overflow: hidden;
+}
+
+body{
+  font-family: sans-serif;
+  background-color: var(--color-6);
+  color: var(--color-7);
+}
+
+main{
+  height: 100vh;
+}
+
+a{
+  color: unset;
+  text-decoration: unset;
+}
+
+header{
+  display: grid;
+  grid-template-columns: minmax(5rem, 5%) 95%;
+  align-items: center;
+}
+
+.back a i{
+  margin: 10px;
+  color: var(--color-6);
+  background-color: var(--color-7);
+  font-size: 3rem;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.welcome-text{
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-family: Bungee Spice;
+  text-shadow: 1px 1px 30px orangered;
+  text-wrap: wrap;
+}
+
+.top-desc{
+  width: 100vw;
+  height: 35%;
+  min-height: 200px;
+  margin: 20px 0;
+}
+
+.top-desc section{
+  position: absolute;
+  right: 5%;
+  background-color: var(--color-4);
+  width: 42%;
+  min-width: 340px;
+  height: 42%;
+  min-height: 200px;
+  border-radius: 30% 20% 10% 50%;
+  border: inset 1px;
+}
+
+.about-me{
+  width: 85%;
+  position: relative;
+  top: 50px;
+  left: 100px;
+  font-size: 3rem;
+  font-family: Protest Revolution;
+  text-shadow: 1px 1px 10px var(--color-9);
+}
+
+.about-me2{
+  position: relative;
+  top: 70px;
+  left: 70px;
+  width: 90%;
+}
+
+.more-info{
+  text-transform: capitalize;
+  font-family: Edu AU VIC WA NT Arrows;
+  font-size: 3.7rem;
+  color: var(--color-5);
+  text-shadow: 2px 2px 10px var(--color-1);
+}
+
+.botpic1{
+  position: absolute;
+  top: 130px;
+  right: 130px;
+  width: 23%;
+  min-width: 110px;
+  height: 60%;
+  min-height: 40px;
+  max-height: 140px;
+  background-color: var(--color-5);
+  border-radius: 50%;
+  padding: 5px 5px 0px 5px;
+  object-fit: cover;
+  box-shadow: 1px 1px 1px 1px;
+}
+
+.chat-display{
+  background-color: var(--color-1);
+  width: 50%;
+  min-width: 350px;
+  height: 75%;
+  min-height: 300px;
+  border-radius: 10%;
+  position: absolute;
+  top: 150px;
+  left: 20px;
+  box-shadow: inset 2px -3px 1px 3px var(--color-7);
+}
+
+.chat-display div{
+  width: 90%;
+  height: 90%;
+  background-color: var(--color-2);
+  margin: 40px auto;
+  border-radius: 5%;
+  padding: 40px;
+  font-size: 1.6rem;
+}
+
+.chat-display div textarea{
+  position: absolute;
+  padding: 5px;
+  bottom: 60px;
+  background-color: antiquewhite;
+  width: 65%;
+  min-width: 200px;
+  height: 7%;
+  min-height: 40px;
+  border-radius: 10%;
+  margin-left: 7%;
+  font-size: 1.6rem;
+  color: var(--color-5);
+  resize: none;
+}
+
+.chat-display div img{
+  position: absolute;
+  left: 9%;
+  bottom: 55px;
+  width: 6%;
+  min-width: 45px;
+  height: 8%;
+  min-height: 40px;
+  object-fit: cover;
+  background-color: var(--color-1);
+  padding: 3px;
+  border-radius: 50%;
+}
+
+section.bottom-desc{
+  position: absolute;
+  right: 5%;
+  width: 40%;
+  min-width: 360px;
+}
+
+div.bottom-desc{
+  position: relative;
+  background-color: var(--color-9);
+  top: 60px;
+  height: 350px;
+  border-radius: 5%;
+  box-shadow: 1px 1px 10px 1px var(--color-5);
+}
+
+.bot-pic2{
+  width: 10%;
+  min-width: 60px;
+  background-color: var(--color-4);
+  border-radius: 50%;
+  padding: 5px;
+  max-height: 75px;
+  height: 9vw;
+  min-height: 65px;
+  box-shadow: 0px 0px 3px inset;
+}
+
+.take-input label[for=input-com]{
+  width: 80%;
+}
+
+#input-com{
+  width: 95%;
+  height: 145px;
+  color: var(--color-7);
+  padding: 8px;
+  border-radius: 5%;
+  background-color: var(--color-4);
+  border: unset;
+  resize: none;
+  font-size: 1.6rem;
+  box-shadow: 1px 1px 10px 1px rgb(133, 84, 138);
+  margin-bottom: 5px;
+}
+
+.take-input{
+  display: flex;
+  column-gap: 10px;
+  padding-top: 40px;
+  padding-left: 15%;
+}
+
+.desc-text{
+  font-size: 2.9rem;
+  text-align: center;
+  margin: -5px 0 0;
+  font-family: Edu AU VIC WA NT Arrows;
+  text-transform: capitalize;
+  text-shadow: 1px 10px 10px var(--color-5);
+}
+
+footer{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: var(--color-2);
+  font-size: 3.5rem;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  padding: 5px;
+  border-radius: 10%;
+  margin-bottom: 10px;
+}
+
+.top-desc section:hover,img:hover,div.bottom-desc:hover, .back i:hover, .chat-display:hover, textarea:hover, h1:hover, h2:hover{
+  transform: scale(103%);
+  transition: 0.3s;
+}
+
+footer a :hover{
+  transform: scale(110%);
+  transition: 15ms;
+}
+
+@media (max-width: 1645px){
+  .more-info{
+    font-size: 3rem;
+  }
+  .botpic1{
+    top: 70%;
+    right: 30%;
+    height: 70%;
+  }
+}
+
+@media (max-width: 1420px){
+  .about-me{
+    width: 82%;
+  }
+  .about-me2{
+    width: 88%;
+  }
+  .botpic1{
+    right: 15%;
+  }
+}
+
+@media (max-width: 1335px){
+  .more-info{
+    font-size: 2.9rem;
+  }
+}
+
+@media (max-width: 1270px) {
+  .about-me{
+    font-size: 2.8rem;
+    width: 79%;
+  }
+  .about-me2{
+    width: 85%;
+  }
+  .more-info{
+    font-size: 2.7rem;
+  }
+  .desc-text{
+    font-size: 2.3rem;
+  }
+  .take-input{
+    padding-left: 5%;
+  }
+}
+
+@media (max-width: 1230px) {
+  .about-me2{
+    height: 145px;
+  }
+  .more-info{
+    font-size: 2.5rem;
+  }
+  .botpic1{
+    top: 92%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1050px){
+  html{
+    overflow: unset;
+    scroll-behavior: smooth;
+  }
+
+  main{
+    height: unset;
+  }
+
+  header{
+    display: unset;
+  }
+.back a i{
+  position: fixed;
+  z-index: 1;
+  top: 10px;
+  left: 10px;
+  margin: 0;
+}
+
+.welcome-text{
+  font-size: 2.5rem;
+}
+
+  .top-desc section, .chat-display, section.bottom-desc, footer{
+    position: relative;
+  }
+  .top-desc{
+    height: 42vh;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+  .top-desc section{
+    right: 0;
+    height: 100%;
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 10%;
+    box-shadow: 1px 1px 10px 1px var(--color-5);
+  }
+  .about-me{
+    width: 85%;
+    font-size: 3rem;
+    left: unset;
+    margin: 0 auto;
+  }
+  
+  .about-me2{
+    width: 90%;
+    left: unset;
+    margin: 0 auto;
+  }
+  
+  .more-info{
+    font-size: 3.7rem;
+  }
+  
+  .botpic1{
+    top: 92%;
+    left: 30%;
+    width: 23%;
+    height: 90%;
+    padding: 0px 5px 0px 5px;
+  }
+
+  .chat-display{
+    padding-top: 40px;
+    top: unset;
+    left: unset;
+    width: 90%;
+    margin: 100px auto;
+    height: 60vh;
+    box-shadow: 1px 1px 10px 3px var(--color-7);
+  }
+
+  .chat-display div{
+    margin: 0px auto;
+  }
+
+  .chat-display div img{
+    width: 60px;
+    height: 13%;
+  }
+  .chat-display div textarea{
+    margin-left: 10%;
+  }
+  section.bottom-desc{
+    width: 85vw;
+    margin: 40px auto;
+    right: unset;
+    }
+  div.bottom-desc{
+    top: unset;
+    margin: 0 auto;
+  }
+  .desc-text{
+    font-size: 3rem;
+  }
+  footer{
+    box-shadow: 1px 1px 10px 1px ;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 1000px) {
+  html{
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 936px) {
+  html{
+    font-size: 56%;
+  }
+}
+
+@media (max-width: 876px) {
+  html{
+    font-size: 53%;
+  }
+  .botpic1{
+    position: relative;
+    top: unset;
+    left: unset;
+    right: unset;
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+    height: 85%;
+  }
+}
+
+@media (max-width: 813px) {
+  html{
+    font-size: 50%;
+  }
+  .top-desc{
+    height: 390px;
+  }
+}
+
+@media (max-width: 705px){
+  .welcome-text{
+    min-width: 100%;
+  }
+  header{
+    display: block;
+    margin: 250px auto 250px;
+    width: 120px;
+    text-wrap: wrap;
+  }
+  .chat-display div img,.bot-pic2{
+    object-fit: contain;
+  }
+  .more-info{
+    font-size: 3rem;
+  }
+  .take-input{
+    padding-left: 4px;
+  }
+}
+
+@media (max-width: 515px){
+  html{
+    font-size: 43%;
+  }
+  .botpic1{
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 380px){
+  .top-desc{
+    height: 58vh;
+  }
+}

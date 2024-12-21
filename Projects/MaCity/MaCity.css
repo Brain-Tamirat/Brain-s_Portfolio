@@ -1,0 +1,369 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root{
+  --color-blue: #538cc6;
+  --color-red: #cc6699;
+  --color-purple: #aa80ff;
+  --color-green: #66cc99;
+  --color-bluelight: #8cb3d9;
+  --color-redlight: #d98cb3;  
+  --color-purplelight: #bb99ff;
+  --color-greenlight: #8cd9b3;  
+}
+
+
+html{
+  font-size: 64%;
+  overflow: hidden;
+}
+
+body{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+main{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: radial-gradient( closest-corner circle at 15% 16%,
+    #ffcf33 19%,#fbfe6f 20%,lightblue 150%
+  );
+}
+
+nav *{
+  position: absolute;
+  background-color: transparent;
+}
+nav a{
+  position: fixed;
+  font-size: 3rem;
+  color: rgb(0, 195, 255);
+  top: 2%;
+  left: 3%;
+}
+nav i{
+  border: 2px solid rgb(0,195,255);
+  border-radius: 50%;
+  padding: 3px 5px 3px 2px;
+  background-color: white;
+}
+nav h1{
+  text-align: center;
+  top: 25%;
+  left: 0;
+  right: 0;
+  font-size: 8rem;
+  color: white;
+  text-shadow: 1px 1px 1px gray;
+}
+
+.frontbuilding, .backbuilding{
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  bottom: -25px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 80vw;
+  height: 60vh;
+}
+.frontbuilding{
+  z-index: 1;
+}
+.ffb, .bbb{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.windows{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.ff1{
+  width: 10%;
+  height: 90%;
+  max-height: 600px;
+}
+
+.ff1a{
+  border-left: 2vw solid transparent;
+  border-right: 2vw solid transparent;
+  border-bottom: 5vh solid var(--color-blue);
+}
+
+.ff1b{
+  width: 60%;
+  height: 10%;
+  max-height: 40px;
+  background-color: var(--color-blue);
+}
+
+.ff1c{
+  width: 8vw;
+  height: 70vh;
+  max-height: 600px;
+  background: 
+  repeating-linear-gradient(
+    90deg, 
+    var(--color-blue), 
+    var(--color-blue) 11%,
+    transparent 11%,
+    transparent 15%, 
+    var(--color-blue) 15%
+  ),
+  linear-gradient(
+    var(--color-blue),
+    var(--color-blue) 10%,
+    var(--color-bluelight)10%,
+    var(--color-bluelight)85%,
+    var(--color-blue) 85%
+  );
+}
+
+.ff2{
+  width: 13%;
+  height: 60%;
+  max-height: 450px;
+}
+
+.ff2a{
+  width: 80%;
+  border-left: 1vw solid transparent;
+  border-right: 1vw solid transparent;
+  border-bottom: 4vw solid var(--color-red);
+}
+
+.ff2b{
+  background-color: var(--color-red);
+  height: 90%;
+  width: 80%;
+}
+
+.windowf2{
+  width: 38px;
+  height: 97%;
+  background-color: var(--color-redlight);
+  margin: 0 2px;
+}
+
+.ff3{
+  width: 12%;
+  height: 55%;
+  max-height: 370px;
+}
+
+.ff3a{
+  width: 80%;
+  height: 25%;
+  background-color: var(--color-purple);
+}
+
+.windowf3{
+  width: 25px;
+  height: 70%;
+  background-color: var(--color-purplelight);
+  margin: 0 2px;
+}
+
+.ff3b{
+  width: 95%;
+  height: 57%;
+  background-color: var(--color-purple);
+}
+
+.ff4{
+  width: 10%;
+  height: 67%;
+  max-height: 470px;
+  position: relative;
+  left: 8%;
+}
+
+.ff4a{
+  width: 89%;
+  border-right: 7vw solid transparent;
+  border-bottom: 3vw solid var(--color-purple);
+}
+
+.ff4b{
+  width: 89%;
+  height: 90%;
+  background-color: var(--color-purple);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.windowf4{
+  width: 30%;
+  height: 10%;
+  margin: -25px 3px 0px;
+  border-radius: 50%;
+  background-color: var(--color-purplelight);
+}
+
+.ff5{
+  position: relative;
+  right: 15%;
+  width: 10%;
+  height: 51%;
+  max-height: 320px;
+  background: repeating-linear-gradient(
+    var(--color-green),
+    var(--color-green) 6%,
+    transparent 6%,
+    transparent 11%
+  ),repeating-linear-gradient(90deg,
+  var(--color-green),
+  var(--color-green) 8%,
+  var(--color-greenlight) 8%,
+  var(--color-greenlight) 47%
+  )
+  ;
+}
+
+.ff6{
+  width: 10%;
+  height: 59%;
+  max-height: 400px;
+  background: repeating-linear-gradient(
+    90deg, var(--color-red), 
+    var(--color-red) 10%, transparent 10%,
+    transparent 30%
+  ),
+  repeating-linear-gradient(
+    var(--color-red),
+    var(--color-red) 8%,
+    var(--color-redlight) 8%,
+    var(--color-redlight) 26%
+  );
+}
+.bb1{
+  width: 10%;
+  height: 101%;
+  max-height: 750px;
+}
+
+.bb1a{
+  width: 60%;
+  height: 8%;
+  max-height: 50px;
+  background: linear-gradient(
+    var(--color-purple)10%,
+    var(--color-purplelight)100%);
+}
+
+.bb1b{
+  width: 70%;
+  height: 7.5%;
+  max-height: 40px;
+  background: linear-gradient(
+    var(--color-purple)10%,
+    var(--color-purplelight)100%);
+}
+
+.bb1c{
+  width: 80%;
+  height: 7.5%;
+  max-height: 40px;
+  background: linear-gradient(
+    var(--color-purple)10%,
+    var(--color-purplelight)100%);
+}
+
+.bb1d{
+  width: 95%;
+  height: 90%;
+  max-height: 595px;
+  background: linear-gradient(
+    var(--color-purple)50%,
+    var(--color-purplelight)90%);
+}
+
+.bb2{
+  width: 10%;
+  height: 76%;
+  max-height: 520px;
+}
+
+.bb2a{
+  border-left: 4vw solid transparent;
+  border-right: 4vw solid transparent;
+  border-bottom: 2vw solid var(--color-green)
+}
+
+.bb2b{
+  width: 100%;
+  height: 90%;
+  background: repeating-linear-gradient(
+    to bottom, var(--color-green), 
+    var(--color-green)7%, var(--color-greenlight)7%,var(--color-greenlight)10%
+  )
+}
+
+.bb3{
+  width: 10%;
+  height: 80%;
+  max-height: 558px;
+  background: repeating-linear-gradient(
+    to right, var(--color-red),
+    var(--color-red) 10%,
+    var(--color-redlight) 15%
+  )
+}
+
+.bb4{
+  width: 14%;
+  height: 83%;
+  max-height: 585px;
+  position: relative;
+  right: 7%;
+}
+
+.bb4a{
+  width: 4%;
+  max-width: 5px;
+  height: 7%;
+  max-height: 40px;
+  background-color: var(--color-blue);
+}
+
+.bb4b{
+  width: 80%;
+  height: 5%;
+  max-height: 40px;
+  background-color: var(--color-blue);
+}
+
+.bb4c{
+  width: 100%;
+  height: 88%;
+  background: repeating-linear-gradient(
+    90deg,var(--color-blue),var(--color-blue)6%,transparent 6%,transparent 24%
+  ),
+  repeating-linear-gradient(
+    var(--color-blue),var(--color-blue)5%,var(--color-bluelight)5%,var(--color-bluelight)90%
+  )
+}
+
+@media (max-width: 1000px){
+  :root{
+    --color-blue: black;
+    --color-red: black;
+    --color-purple: black;
+    --color-green: black;
+  }
+  main{
+    background: radial-gradient( closest-corner circle at 15% 16%,
+    #cccccc 19%,#424253 20%,#222233 150%
+  );
+  }
+}
