@@ -925,6 +925,29 @@ a{
   }
 }
 
-@media (max-width: 450px){
-  html{ font-size: 55%;}
+@media (max-width: 500px){
+  html{
+    font-size: 58%;
+  }
+  .top-bar{
+    top: 15px;
+    width: 99%;
+  }
+  main{
+    display: grid;
+    grid-template-columns: 1% 1fr 2%;
+  }
+  main *{
+    grid-column: 2/3;
+  }
+  .about-page-link{
+    margin-left: 75%;
+  }
+  .about-page, .certeficates, .footer{
+    width: 99%;
+  }
+
+  .certeficates img{
+    margin: 0;
+  }
 }
