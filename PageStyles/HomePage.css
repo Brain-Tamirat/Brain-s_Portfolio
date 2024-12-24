@@ -930,18 +930,11 @@ a{
     font-size: 58%;
   }
   .top-bar{
-    top: 15px;
+    top: 2px;
   }
   .hide{
-    right: 60px;
+    right: 30px;
   }
-/*   main{
-    display: grid;
-    grid-template-columns: 1% 1fr 2%;
-  }
-  main *{
-    grid-column: 2/3;
-  } */
   .about-page-link{
     margin-left: 75%;
   }
@@ -951,5 +944,14 @@ a{
 
   .certeficates img{
     margin: 0;
+  }
+
+  .learning-progress{
+    width: 75%;
+    padding: 10px;
+  }
+
+  .my-works{
+    width: 85%;
   }
 }
